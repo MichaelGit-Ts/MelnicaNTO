@@ -21,6 +21,7 @@
             <audio id="sound" src="sounds/melnicasound.mp3"></audio>
 
             <a-asset-item 
+                pre-load="auto"
                 id="fight" 
                 scr="models/Fighters.glb">
             </a-asset-item>
@@ -59,7 +60,7 @@
             <a-entity id="Currentfight" gltf-model="" mixin="" animation="">
             </a-entity>
             <!--Модель на мракер устанавливаем-->
-            <a-entity id="fight" gltf-model="models/Fighters.glb" scale="0.1 0.1 0.1" position="0 0 -1" rotation="0 0 0"
+            <a-entity id="fight" gltf-model="models/Fighters.glb" scale="0.1 0.1 0.1" position="0 0 -2" rotation="0 0 0"
                 animation-mixer="clip: *; loop: repeat">
             </a-entity>
             
@@ -86,16 +87,6 @@
             <a-entity id="explosion" gltf-model="models/timeframe_explosion.glb" scale="0.3 0.3 0.3" position="0 0 -2"
                 rotation="0 0 0" animation-mixer="clip: *; loop: repeat">
             </a-entity>
-
-
-
-            <a-entity id="CurrentEgor" gltf-model="" mixin="" animation="">
-            </a-entity>
-            <!--Модель на мракер устанавливаем-->
-            <a-entity id="egor" gltf-model="models/chel.glb" scale="0.02 0.02 0.02" position="2 0 0" rotation="3 0 0"
-                animation-mixer="clip: *; loop: pingpong" sound="src: #sound; autoplay: False; loop: true; volume: 4">
-            </a-entity>
-
 
         </a-marker-camera>
 
